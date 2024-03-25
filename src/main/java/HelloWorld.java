@@ -5,8 +5,4 @@ public class HelloWorld {
             System.out.println("i = " + i);
         }
     }
-
-    private void sum (int a, int b, int c){
-        int result = a + b + c;
-    }
 }
