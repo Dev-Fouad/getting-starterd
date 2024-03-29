@@ -1,8 +1,21 @@
+import java.util.Scanner;
+
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello world");
-        for (int i = 0; i < 10; i++) {
-            System.out.println("i = " + i);
-        }
+
+        System.out.println("Enter your age");
+
+        Scanner s = new Scanner(System.in);
+         int age = s.nextInt();
+
+         if (age < 18) {
+             System.out.println("You are less than 18 and teenager");
+         } else if (age > 18 && age <40) {
+             System.out.println("You are a young boy");
+         } else if (age > 40 && age <50) {
+             System.out.println("You are not young nor old");
+         } else {
+             System.out.println("You are old");
+         }
     }
 }
